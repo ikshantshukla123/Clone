@@ -1,23 +1,26 @@
 @import "tailwindcss";
 
+@theme inline {
+  /* Colors */
+  --color-ink: #223614;
+  --color-paper: #FBF6F1;
+  --color-lavender: #c2bfcb;
+
+  /* Font families - these reference the CSS variables from next/font */
+  --font-family-heading: var(--font-heading), sans-serif;
+  --font-family-body: var(--font-body), serif;
+
+  /* Map Tailwind's font utilities to your custom fonts */
+  --font-sans: var(--font-heading), system-ui, sans-serif;
+  --font-serif: var(--font-body), Georgia, serif;
+}
+
 :root {
   --background: #FBF6F1;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
- 
+  --foreground: #223614;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }

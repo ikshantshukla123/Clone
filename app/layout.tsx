@@ -6,7 +6,7 @@ import Header from "@/components/layout/Header";
 const headingFont = Outfit({ 
   subsets: ["latin"],
   variable: "--font-heading",
-  weight: ["400", "500"],
+ weight: ["300", "400", "500", "600"],
 });
 
 // Libre Baskerville matches the "Therapy for Adults" serif text
@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${headingFont.variable} ${bodyFont.variable} font-sans bg-paper text-ink antialiased`}>
+      <body className={`${headingFont.variable} ${bodyFont.variable} font-heading bg-paper text-ink antialiased`}>
         <Header />
         <main id="page">
             {children}
