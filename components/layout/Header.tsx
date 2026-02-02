@@ -6,7 +6,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-paper/90 backdrop-blur-sm transition-all duration-300">
+   <header className="fixed top-0 left-0 w-full z-50 bg-transparent transition-all duration-300">
       {/* Wrapper with specific padding */}
       <div className="header-nav-wrapper px-[22px] py-[22px]">
         
