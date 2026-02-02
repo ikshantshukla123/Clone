@@ -6,8 +6,9 @@ import AboutLilac from "@/components/home/AboutLilac";
 import Faq from "@/components/home/Faq";
 import Professinal from "@/components/home/Professinal";
 // import ProfessionalBackground from "@/components/home/ProfessionalBackground";
-// import GetStarted from "@/components/home/GetStarted";
+import GetStarted from "@/components/home/GetStarted";
 import Footer from "@/components/layout/Footer";
+import Last from "@/components/home/Last";
 
 export default function Home() {
   return (
@@ -18,8 +19,11 @@ export default function Home() {
       <Alone />
       <AboutLilac />
       <Faq />
+
     <Professinal />
+    <GetStarted />
       <Footer />
+      <Last/>
     </main>
   );
 }
