@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import AccordionIcon from "../ui/AccordionIcon";
 
 const backgroundData = [
   {
@@ -34,43 +35,42 @@ export default function ProfessionalBackground() {
 
   return (
     // Background color matches the beige from your "About Lilac" section (#E5E0DA)
-    <section className="bg-[#E5E0DA] py-24 px-6 min-h-[550px] flex items-center">
+    <section className="bg-[#E5E0DA] py-24 px-6 min-h-[650px] flex items-center">
       <div className="w-full max-w-[800px] mx-auto">
-        
+
         {/* Centered Heading */}
-        <h2 className="font-heading text-4xl md:text-5xl text-center text-[#223614] mb-16 font-medium">
+        <h2 className="font-heading text-4xl md:text-[3.3rem] text-center text-[#223614] mb-12 font-medium">
           My Professional Background
         </h2>
 
         {/* Accordion List Container */}
         {/* We constrain the width to approx 650px to match the screenshot look */}
-        <div className="w-full max-w-[650px] mx-auto border-t border-[#223614]/30">
+        <div className="w-full max-w-[850px] mx-auto border-t border-[#223614]">
           {backgroundData.map((item, index) => (
-            <div key={index} className="border-b border-[#223614]/30">
-              
+            <div key={index} className="border-b  border-[#223614]">
+
               {/* Toggle Button */}
               <button
                 onClick={() => toggleItem(index)}
                 className="w-full py-3 flex items-center justify-between group text-left"
               >
                 {/* Title (Left) */}
-                <span className="font-heading text-lg md:text-xl text-[#223614] font-normal  transition-opacity">
+                <span className="font-heading text-lg md:text-3xl text-[#223614] font-normal  transition-opacity">
                   {item.title}
                 </span>
 
                 {/* Plus Icon (Right) */}
-                <span className="font-heading text-xl font-light text-[#223614]  ml-4">
-                  {openIndex === index ? "−" : "+"}
+                <span className="ml-4">
+                  <AccordionIcon isOpen={openIndex === index} size={32} lineWidth={16} />
                 </span>
               </button>
 
               {/* Expandable Content */}
               <div
-                className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                  openIndex === index ? "max-h-[200px] opacity-100 pb-6" : "max-h-0 opacity-0"
-                }`}
+                className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? "max-h-[200px] opacity-100 pb-6" : "max-h-0 opacity-0"
+                  }`}
               >
-                <ul className="font-body text-sm leading-7 text-[#223614] pl-1 list-none space-y-1">
+                <ul className="font-body text-sm leading-7 text-[#223614] pl-4 list-none space-y-1">
                   {item.details.map((detail, i) => (
                     <li key={i}>{detail}</li>
                   ))}

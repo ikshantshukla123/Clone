@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import AccordionIcon from "../ui/AccordionIcon";
 
 const faqData = [
   {
@@ -24,18 +25,18 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-paper px-6 min-h-[950px] flex items-center">
+    <section className="bg-paper px-6 min-h-[970px] flex items-center">
 
-      <div className="w-full max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-start">
+      <div className="w-full max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-1 items-start">
 
         {/* LEFT COLUMN: Arch Image */}
-        <div className="flex justify-center md:justify-start">
+        <div className="flex justify-center md:justify-end mr-30 ">
           {/* UPDATED SPECS:
                1. w-[450px]: Your requested width.
                2. h-[625px]: Your requested height.
                3. rounded-t-[225px]: Changed to 225px (Half of 450) to make it a perfect circle top.
            */}
-          <div className="w-[380px] h-[540px] md:w-[500px] md:h-[720px] rounded-t-[190px] md:rounded-t-[260px] overflow-hidden relative shadow-sm">
+          <div className="w-[380px] h-[560px] md:w-[500px] md:h-[720px] rounded-t-[190px] md:rounded-t-[260px] overflow-hidden relative shadow-sm">
             <img
               src="/home/newten.webp"
               alt="Dried flowers in vase"
@@ -45,25 +46,25 @@ export default function FAQ() {
         </div>
 
         {/* RIGHT COLUMN: FAQ List */}
-        {/* pt-8: Pushed down slightly to align nicely with the larger image's curve */}
-        <div className="pt-8 md:pl-10">
-          <h2 className="font-heading text-5xl md:text-6xl text-[#213614] mb-12 font-semibold">FAQs</h2>
+        {/* pt-15: Pushed down slightly to align nicely with the larger image's curve */}
+        <div className="pt-35 md:pl-1">
+          <h2 className="font-heading text-xl md:text-6xl text-[#213614] mb-20 font-semibold">FAQs</h2>
 
-          <div className="border-t border-ink/30">
+          <div className="border-t border-ink">
             {faqData.map((item, index) => (
-              <div key={index} className="border-b border-ink/30">
+              <div key={index} className="border-b border-ink">
 
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full py-6 flex items-center text-left group"
+                  className="w-full py-4 flex items-center text-left group"
                 >
-                  {/* Plus Icon */}
-                  <span className="font-heading text-3xl font-light mr-6 text-[#213614]/70 transition-colors">
-                    {openIndex === index ? "−" : "+"}
+                  {/* Plus/Minus Icon */}
+                  <span className="mr-4">
+                    <AccordionIcon isOpen={openIndex === index} size={48} lineWidth={24} />
                   </span>
 
                   {/* Question Text */}
-                  <span className="font-heading text-2xl md:text-3xl font-semibold text-[#213614]">
+                  <span className="font-heading text-2xl md:text-5xl font-medium text-[#213614]">
                     {item.question}
                   </span>
                 </button>

@@ -1,4 +1,5 @@
 import Container from "../ui/Container";
+import Button from "../ui/Button";
 
 export default function Hero() {
   return (
@@ -36,9 +37,9 @@ export default function Hero() {
             </p>
 
             <div className="mt-8 sm:mt-10 lg:mt-[50px]">
-              <a href="#" className="group inline-flex items-center justify-center border border-[#223614] px-6 sm:px-[20px] py-3 sm:py-[11px] text-[10px] sm:text-[11px] font-bold uppercase tracking-[0.2em] text-[#223614] transition-all duration-300 hover:bg-[#223614] hover:text-white">
+              <Button className="px-5 sm:px-[20px] py-3 sm:py-[14px] text-[10px] sm:text-[12px]">
                 CONNECT WITH ME →
-              </a>
+              </Button>
             </div>
 
           </div>

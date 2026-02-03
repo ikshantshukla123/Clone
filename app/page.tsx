@@ -8,7 +8,7 @@ import Professinal from "@/components/home/Professinal";
 // import ProfessionalBackground from "@/components/home/ProfessionalBackground";
 import GetStarted from "@/components/home/GetStarted";
 import Footer from "@/components/layout/Footer";
-import Last from "@/components/home/Last";
+
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
     <Professinal />
     <GetStarted />
       <Footer />
-      <Last/>
+     
     </main>
   );
 }

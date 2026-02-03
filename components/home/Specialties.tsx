@@ -31,11 +31,14 @@ export default function Specialties() {
                 <p className="font-body text-sm leading-relaxed">{item.desc}</p>
               </div>
 
-              {/* Circle Image Bottom */}
-              {/* We create a large circle mask using rounded-full */}
+              
               <div className="w-[320px] h-[320px] rounded-full overflow-hidden mx-auto mt-12">
-                <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
-              </div>
+  <img 
+    src={item.img} 
+    alt={item.title} 
+    className="w-full h-full object-cover object-[center_80%]" 
+  />
+</div>
             </div>
           ))}
         </div>

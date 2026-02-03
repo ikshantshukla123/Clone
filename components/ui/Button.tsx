@@ -1,20 +1,42 @@
+import React from 'react';
+
+interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  className?: string; // Additional Tailwind classes
+  disabled?: boolean;
+  type?: 'button' | 'submit' | 'reset';
+  variant?: 'primary' | 'inverse'; // Primary for light bg, Inverse for dark bg
+}
+
 export default function Button({
   children,
-}: {
-  children: React.ReactNode;
-}) {
+  onClick,
+  className = '',
+  disabled = false,
+  type = 'button',
+  variant = 'primary'
+}: ButtonProps) {
+
+  // Base styles common to all buttons
+  const baseStyles = "inline-flex items-center justify-center border font-bold uppercase tracking-[0.2em]  transition-all duration-800 disabled:opacity-50 disabled:cursor-not-allowed";
+
+  // Variant specific styles
+  const variants = {
+    primary: "border-[#223614] text-[#223614] hover:bg-[#223614] hover:text-white",
+    inverse: "border-white text-white hover:bg-white hover:text-[#223614]" // Default hover text to ink, can be overridden
+  };
+
   return (
     <button
-      className="
-        font-heading
-        text-[16px]
-        text-ink
-        border border-ink
-        px-btnX py-btnY
-        uppercase
-        tracking-wide
-        inline-flex items-center gap-2
-      "
+      type={type}
+      onClick={onClick}
+      disabled={disabled}
+      className={`
+        ${baseStyles}
+        ${variants[variant]}
+        ${className} /* Allow merging/overriding styles */
+      `}
     >
       {children}
     </button>

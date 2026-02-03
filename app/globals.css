@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Colors */
+  
   --color-ink: #223614;
   --color-paper: #FBF6F1;
   --color-lavender: #c2bfcb;
 
-  /* Font families - these reference the CSS variables from next/font */
-  --font-family-heading: var(--font-heading), sans-serif;
-  --font-family-body: var(--font-body), serif;
 
-  /* Map Tailwind's font utilities to your custom fonts */
-  --font-sans: var(--font-heading), system-ui, sans-serif;
-  --font-serif: var(--font-body), Georgia, serif;
+   --font-family-heading: var(--font-heading), sans-serif;
+  --font-family-body: var(--font-heading), sans-serif; /* Changed this line */
+
+ 
+  --font-family-sans: var(--font-heading), sans-serif;
+  --font-family-serif: var(--font-heading), sans-serif; 
 }
 
 :root {
@@ -23,4 +23,14 @@
 body {
   background: var(--background);
   color: var(--foreground);
+  font-family: var(--font-body),sans-serif;
+}
+
+
+* {
+  font-family: var(--font-heading), sans-serif;
+}
+
+button {
+  font-family: inherit;
 }
