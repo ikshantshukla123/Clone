@@ -38,57 +38,103 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  // Prevent body scroll when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isOpen]);
+
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 bg-paper  transition-all duration-300 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
-     
-      <div className="header-nav-wrapper px-[20px] py-[20px]">
+    <>
+      <header className={`fixed top-0 left-0 w-full z-50 bg-paper transition-all duration-300 ease-in-out ${isVisible ? "translate-y-0" : "-translate-y-full"}`}>
+        <div className="header-nav-wrapper px-4 md:px-[20px] py-4 md:py-[20px]">
+          <nav className="flex items-center justify-between max-w-full mx-auto">
 
-       
-        <nav className="flex items-center justify-between max-w-full mx-auto">
+            {/* MOBILE BURGER - LEFT SIDE - TWO LINES */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="md:hidden z-50 flex flex-col justify-center items-center w-11 h-11 gap-2 group ml-1"
+              aria-label="Toggle menu"
+            >
+              <span className={`h-[2px] w-6 bg-ink transition-all duration-300 ${isOpen ? "rotate-45 translate-y-1" : ""}`} />
+              <span className={`h-[2px] w-6 bg-ink transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-1" : ""}`} />
+            </button>
 
-     
+            {/* LOGO/HEADING - LEFT ON DESKTOP, RIGHT ON MOBILE */}
+            <Link
+              href="/"
+              className="font-heading text-2xl sm:text-3xl md:text-[38px] leading-none font-medium tracking-wide text-ink z-50 mr-1 md:mr-0 md:ml-10 order-2 md:order-1"
+            >
+              Lilac Template
+            </Link>
+
+            {/* DESKTOP NAVIGATION - RIGHT SIDE */}
+            <div className="hidden md:flex items-center gap-10 mr-10 order-1 md:order-2">
+              <Link
+                href="/blog"
+                className="font-heading text-[22px] tracking-wide text-ink hover:opacity-70 transition-opacity"
+              >
+                Blog
+              </Link>
+              <Link
+                href="/contact"
+                className="font-heading text-[22px] tracking-wide text-ink hover:opacity-70 transition-opacity"
+              >
+                Contact
+              </Link>
+            </div>
+
+          </nav>
+        </div>
+      </header>
+
+      {/* MOBILE MENU OVERLAY - FULL SCREEN */}
+      <div className={`fixed inset-0 bg-paper z-[60] md:hidden transition-opacity duration-500 ease-in-out ${isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"}`}>
+        
+        {/* Top Bar with X and Logo */}
+        <div className="fixed top-0 left-0 w-full px-4 py-4 flex items-center justify-between">
+          {/* X Button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className="flex flex-col justify-center items-center w-11 h-11 ml-1"
+            aria-label="Close menu"
+          >
+            <span className="h-[2px] w-6 bg-ink rotate-45 translate-y-[1px]" />
+            <span className="h-[2px] w-6 bg-ink -rotate-45 -translate-y-[1px]" />
+          </button>
+
+          {/* Logo */}
           <Link
             href="/"
-            className="font-heading text-[38px] ml-10 leading-none font-medium      tracking-wide text-ink z-50"
+            onClick={() => setIsOpen(false)}
+            className="font-heading text-2xl sm:text-3xl leading-none font-medium tracking-wide text-ink mr-1"
           >
             Lilac Template
           </Link>
+        </div>
 
-       
-          <div className="hidden md:flex items-center mr-10  tracking-normal gap-10">
-            <Link
-              href="/blog"
-              className="font-heading text-[22px] tracking-wide text-ink hover:opacity-70 transition-opacity"
-            >
-              Blog
-            </Link>
-            <Link
-              href="/contact"
-              className="font-heading text-[22px] tracking-wide text-ink hover:opacity-70 transition-opacity"
-            >
-              Contact
-            </Link>
-          </div>
-
-          {/* MOBILE BURGER */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden z-50 flex flex-col justify-center items-center w-8 h-8 gap-1.5 group"
+        {/* Menu Links - Centered */}
+        <div className="flex flex-col items-center justify-center h-full gap-12 sm:gap-16">
+          <Link
+            href="/blog"
+            onClick={() => setIsOpen(false)}
+            className="font-heading text-5xl sm:text-6xl text-ink hover:opacity-70 transition-opacity active:opacity-50"
           >
-            <span className={`h-[1px] w-6 bg-ink transition-all duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`} />
-            <span className={`h-[1px] w-6 bg-ink transition-all duration-300 ${isOpen ? "opacity-0" : ""}`} />
-            <span className={`h-[1px] w-6 bg-ink transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`} />
-          </button>
-
-        </nav>
-
-        {/* MOBILE MENU OVERLAY */}
-        <div className={`fixed inset-0 bg-paper flex flex-col items-center justify-center gap-8 transition-transform duration-500 ease-in-out md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-          <Link href="/blog" onClick={() => setIsOpen(false)} className="font-heading text-2xl text-ink">Blog</Link>
-          <Link href="/contact" onClick={() => setIsOpen(false)} className="font-heading text-2xl text-ink">Contact</Link>
+            Blog
+          </Link>
+          <Link
+            href="/contact"
+            onClick={() => setIsOpen(false)}
+            className="font-heading text-5xl sm:text-6xl text-ink hover:opacity-70 transition-opacity active:opacity-50"
+          >
+            Contact
+          </Link>
         </div>
 
       </div>
-    </header>
+    </>
   );
 }

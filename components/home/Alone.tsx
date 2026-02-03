@@ -5,11 +5,12 @@ export default function Alone() {
     <section className="w-full grid grid-cols-1 md:grid-cols-2">
 
       {/* LEFT: Image */}
-      <div className="relative h-[800px] md:h-auto min-h-[900px]">
+      <div className="relative h-[400px] sm:h-[500px] md:h-auto md:min-h-[900px]">
         <img
           src="/home/newsix.webp"
           alt="Woman sitting"
           className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
         />
       </div>
 

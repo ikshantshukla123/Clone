@@ -25,30 +25,25 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-paper px-6 min-h-[970px] flex items-center">
+    <section className="bg-paper px-4 sm:px-6 py-12 sm:py-16 md:py-20 lg:min-h-[970px] flex items-center">
 
-      <div className="w-full max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-1 items-start">
+      <div className="w-full max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-8 lg:gap-1 items-start">
 
         {/* LEFT COLUMN: Arch Image */}
-        <div className="flex justify-center md:justify-end mr-30 ">
-          {/* UPDATED SPECS:
-               1. w-[450px]: Your requested width.
-               2. h-[625px]: Your requested height.
-               3. rounded-t-[225px]: Changed to 225px (Half of 450) to make it a perfect circle top.
-           */}
-          <div className="w-[380px] h-[560px] md:w-[500px] md:h-[720px] rounded-t-[190px] md:rounded-t-[260px] overflow-hidden relative shadow-sm">
+        <div className="flex justify-center md:justify-end md:mr-8 lg:mr-30 order-1 md:order-1">
+          <div className="w-[300px] h-[440px] sm:w-[350px] sm:h-[520px] md:w-[500px] md:h-[720px] rounded-t-[150px] sm:rounded-t-[175px] md:rounded-t-[260px] overflow-hidden relative shadow-sm">
             <img
               src="/home/newten.webp"
               alt="Dried flowers in vase"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </div>
 
         {/* RIGHT COLUMN: FAQ List */}
-        {/* pt-15: Pushed down slightly to align nicely with the larger image's curve */}
-        <div className="pt-35 md:pl-1">
-          <h2 className="font-heading text-xl md:text-6xl text-[#213614] mb-20 font-semibold">FAQs</h2>
+        <div className="order-2 md:order-2 md:pt-8 lg:pt-35 md:pl-1">
+          <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#213614] mb-8 sm:mb-12 md:mb-16 lg:mb-20 font-semibold">FAQs</h2>
 
           <div className="border-t border-ink">
             {faqData.map((item, index) => (
@@ -56,23 +51,28 @@ export default function FAQ() {
 
                 <button
                   onClick={() => toggleFAQ(index)}
-                  className="w-full py-4 flex items-center text-left group"
+                  className="w-full py-4 sm:py-5 md:py-4 flex items-start sm:items-center text-left group min-h-[44px]"
+                  aria-expanded={openIndex === index}
                 >
                   {/* Plus/Minus Icon */}
-                  <span className="mr-4">
-                    <AccordionIcon isOpen={openIndex === index} size={48} lineWidth={24} />
+                  <span className="mr-3 sm:mr-4 flex-shrink-0 mt-1 sm:mt-0">
+                    <AccordionIcon
+                      isOpen={openIndex === index}
+                      size={36}
+                      lineWidth={18}
+                    />
                   </span>
 
                   {/* Question Text */}
-                  <span className="font-heading text-2xl md:text-5xl font-medium text-[#213614]">
+                  <span className="font-heading text-lg sm:text-xl md:text-3xl lg:text-4xl xl:text-5xl font-medium text-[#213614] leading-tight">
                     {item.question}
                   </span>
                 </button>
 
                 <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[200px] opacity-100 mb-6' : 'max-h-0 opacity-0'}`}
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-[300px] sm:max-h-[250px] md:max-h-[200px] opacity-100 mb-4 sm:mb-5 md:mb-6' : 'max-h-0 opacity-0'}`}
                 >
-                  <p className="font-body text-base md:text-lg leading-7 text-[#213614]/80 pl-10 max-w-md">
+                  <p className="font-body text-sm sm:text-base md:text-lg leading-6 sm:leading-7 text-[#213614]/80 pl-12 sm:pl-14 md:pl-16 lg:pl-10 pr-2 sm:pr-4 max-w-full md:max-w-md">
                     {item.answer}
                   </p>
                 </div>
