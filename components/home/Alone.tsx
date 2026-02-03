@@ -5,7 +5,7 @@ export default function Alone() {
     <section className="w-full grid grid-cols-1 md:grid-cols-2">
 
       {/* LEFT: Image */}
-      <div className="relative h-[400px] sm:h-[500px] md:h-auto md:min-h-[900px]">
+      <div className="relative h-[400px] sm:h-[500px] md:h-auto md:min-h-[900px]" data-aos="fade-up" data-aos-duration="1000">
         <img
           src="/home/newsix.webp"
           alt="Woman sitting"

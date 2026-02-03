@@ -24,7 +24,10 @@ export default function Specialties() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 md:gap-3">
           {specialties.map((item, index) => (
-            <div key={index} className="bg-[#EAE6E0] p-5 sm:p-6 md:p-5 min-h-[450px] sm:min-h-[500px] md:min-h-[550px] flex flex-col justify-between relative overflow-hidden group border border-black/20">
+            <div
+              key={index}
+              className="bg-[#EAE6E0] p-5 sm:p-6 md:p-5 min-h-[450px] sm:min-h-[500px] md:min-h-[550px] flex flex-col justify-between relative overflow-hidden group border border-black/20"
+            >
               {/* Text Top */}
               <div>
                 <h3 className="font-heading text-xl sm:text-2xl md:text-xl font-medium mb-4 sm:mb-6 md:mb-[29px] text-[#223614]">{item.title}</h3>
@@ -32,7 +35,12 @@ export default function Specialties() {
               </div>
 
               {/* Image Bottom - Responsive Circle */}
-              <div className="w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] aspect-square rounded-full overflow-hidden mx-auto mt-8 sm:mt-10 md:mt-12">
+              <div
+                className="w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] aspect-square rounded-full overflow-hidden mx-auto mt-8 sm:mt-10 md:mt-12"
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
+                data-aos-duration="800"
+              >
                 <img
                   src={item.img}
                   alt={item.title}

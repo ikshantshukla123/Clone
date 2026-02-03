@@ -1,12 +1,13 @@
 import "./globals.css";
 import { Outfit, Libre_Baskerville } from "next/font/google";
 import Header from "@/components/layout/Header";
+import ScrollAnimationProvider from "@/components/ui/ScrollAnimationProvider";
 
 // Outfit matches the geometric sans-serif of the "Lilac Template"
-const headingFont = Outfit({ 
+const headingFont = Outfit({
   subsets: ["latin"],
   variable: "--font-heading",
- weight: ["300", "400", "500", "600"],
+  weight: ["300", "400", "500", "600"],
 });
 
 // Libre Baskerville matches the "Therapy for Adults" serif text
@@ -24,10 +25,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${headingFont.variable} ${bodyFont.variable} font-heading bg-paper text-ink antialiased`}>
-        <Header />
-        <main id="page">
+        <ScrollAnimationProvider>
+          <Header />
+          <main id="page">
             {children}
-        </main>
+          </main>
+        </ScrollAnimationProvider>
       </body>
     </html>
   );

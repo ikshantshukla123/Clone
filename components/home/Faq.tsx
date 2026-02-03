@@ -30,7 +30,7 @@ export default function FAQ() {
       <div className="w-full max-w-[1500px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-8 lg:gap-1 items-start">
 
         {/* LEFT COLUMN: Arch Image */}
-        <div className="flex justify-center md:justify-end md:mr-8 lg:mr-30 order-1 md:order-1">
+        <div className="flex justify-center md:justify-end md:mr-8 lg:mr-30 order-1 md:order-1" data-aos="fade-up" data-aos-duration="1000">
           <div className="w-[300px] h-[440px] sm:w-[350px] sm:h-[520px] md:w-[500px] md:h-[720px] rounded-t-[150px] sm:rounded-t-[175px] md:rounded-t-[260px] overflow-hidden relative shadow-sm">
             <img
               src="/home/newten.webp"
@@ -47,7 +47,13 @@ export default function FAQ() {
 
           <div className="border-t border-ink">
             {faqData.map((item, index) => (
-              <div key={index} className="border-b border-ink">
+              <div
+                key={index}
+                className="border-b border-ink"
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                data-aos-duration="600"
+              >
 
                 <button
                   onClick={() => toggleFAQ(index)}

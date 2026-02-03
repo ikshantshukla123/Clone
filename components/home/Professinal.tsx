@@ -39,14 +39,20 @@ export default function ProfessionalBackground() {
       <div className="w-full max-w-[800px] mx-auto">
 
         {/* Centered Heading */}
-        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.3rem] text-center text-[#223614] mb-8 sm:mb-10 md:mb-12 font-medium">
+        <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.3rem] text-center text-[#223614] mb-8 sm:mb-10 md:mb-12 font-medium" data-aos="fade-down" data-aos-duration="800">
           My Professional Background
         </h2>
 
         {/* Accordion List Container */}
         <div className="w-full max-w-[850px] mx-auto border-t border-[#223614]">
           {backgroundData.map((item, index) => (
-            <div key={index} className="border-b border-[#223614]">
+            <div
+              key={index}
+              className="border-b border-[#223614]"
+              data-aos="fade-up"
+              data-aos-delay={index * 120}
+              data-aos-duration="700"
+            >
 
               {/* Toggle Button */}
               <button

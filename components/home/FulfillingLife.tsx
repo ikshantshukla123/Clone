@@ -6,7 +6,7 @@ export default function FulfillingLife() {
     <section className="w-full flex flex-col md:grid md:grid-cols-2">
 
       {/* Image First on Mobile */}
-      <div className="relative h-[350px] sm:h-[450px] md:hidden">
+      <div className="relative h-[350px] sm:h-[450px] md:hidden" data-aos="fade-up" data-aos-duration="1000">
         <img
           src="/home/newtwo.webp"
           className="absolute inset-0 w-full h-full object-cover"
@@ -41,7 +41,7 @@ export default function FulfillingLife() {
       </div>
 
       {/* Image (Desktop Only) */}
-      <div className="hidden md:block relative h-auto min-h-[600px] order-1 md:order-2">
+      <div className="hidden md:block relative h-auto min-h-[600px] order-1 md:order-2" data-aos="fade-up" data-aos-duration="1000">
         <img
           src="/home/newtwo.webp"
           className="absolute inset-0 w-full h-full object-cover"

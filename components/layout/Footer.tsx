@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between gap-8 sm:gap-10 md:gap-12">
 
           {/* LEFT SIDE: Contact Info */}
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-start" data-aos="fade-up" data-aos-duration="800">
             <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-7 md:mb-8">
               Lilac Template
             </h3>
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row md:flex-row gap-8 sm:gap-12 md:gap-16 lg:gap-[300px]">
 
             {/* Hours */}
-            <div className="flex flex-col items-start text-left">
+            <div className="flex flex-col items-start text-left" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Hours</h4>
               <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7">
                 <p>Monday – Friday</p>
@@ -43,7 +43,7 @@ export default function Footer() {
             </div>
 
             {/* Find */}
-            <div className="flex flex-col items-start md:items-end text-left md:text-right">
+            <div className="flex flex-col items-start md:items-end text-left md:text-right" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Find</h4>
               <nav className="flex flex-col gap-2 sm:gap-3 md:gap-2 font-heading text-base sm:text-lg md:text-xl underline decoration-1 underline-offset-4">
                 <Link href="/" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center">Home</Link>
@@ -64,7 +64,7 @@ export default function Footer() {
         <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
 
           {/* Legal Links */}
-          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-y-3 sm:gap-y-2 gap-x-4 sm:gap-x-6 font-heading text-sm sm:text-base underline decoration-1 underline-offset-4">
+          <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-y-3 sm:gap-y-2 gap-x-4 sm:gap-x-6 font-heading text-sm sm:text-base underline decoration-1 underline-offset-4" data-aos="fade-up" data-aos-duration="800">
             <Link href="#" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center">Privacy & Cookies Policy</Link>
             <Link href="#" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center">Good Faith Estimate</Link>
             <Link href="#" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center">Website Terms & Conditions</Link>
@@ -72,12 +72,12 @@ export default function Footer() {
           </div>
 
           {/* Credits */}
-          <div className="font-heading text-sm sm:text-base">
+          <div className="font-heading text-sm sm:text-base" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
             Website Template Credits: <a href="#" className="underline decoration-1 underline-offset-4 hover:no-underline active:opacity-70">Go Bloom Creative</a>
           </div>
 
           {/* Copyright */}
-          <div className="font-heading text-sm sm:text-base mt-4 sm:mt-6 md:mt-10">
+          <div className="font-heading text-sm sm:text-base mt-4 sm:mt-6 md:mt-10" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
             All Rights Reserved © 2024 Your Business Name Here, LLC.
           </div>
 
