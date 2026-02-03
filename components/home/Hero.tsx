@@ -7,7 +7,7 @@ export default function Hero() {
 
       <div className="w-full max-w-[1600px] mx-auto flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 items-center lg:items-start px-4 sm:px-6 lg:px-4">
 
-        {/* --- IMAGE --- */}
+      
         <div className="w-full lg:col-span-5 flex justify-center lg:justify-start lg:pl-[26px] mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
 
           <div className="relative w-[300px] h-[440px] sm:w-[360px] sm:h-[530px] lg:w-[640px] lg:h-[900px] rounded-t-[150px] sm:rounded-t-[180px] lg:rounded-t-[322.5px] overflow-hidden shadow-sm flex-shrink-0">
@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
 
 
-        {/* --- TEXT --- */}
+
         <div className="w-full lg:col-span-7 flex flex-col items-center text-center lg:mt-[190px] px-4 sm:px-6 lg:px-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
           <div className="flex flex-col items-center max-w-2xl">

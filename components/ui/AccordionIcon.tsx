@@ -1,14 +1,14 @@
 interface AccordionIconProps {
   isOpen: boolean;
-  size?: number; // Size in pixels for both width and height
-  lineWidth?: number; // Width of the lines
-  color?: string; // Color of the icon
+  size?: number; 
+  lineWidth?: number; 
+  color?: string; 
 }
 
 export default function AccordionIcon({
   isOpen,
-  size = 48, // Default 48px (w-12 h-12)
-  lineWidth = 24, // Default 24px (w-6)
+  size = 48, 
+  lineWidth = 24,
   color = "#213614"
 }: AccordionIconProps) {
   return (
@@ -16,7 +16,7 @@ export default function AccordionIcon({
       className="relative flex items-center justify-center"
       style={{ width: `${size}px`, height: `${size}px` }}
     >
-      {/* Horizontal line (always visible) */}
+     
       <span
         className="absolute"
         style={{
@@ -26,7 +26,7 @@ export default function AccordionIcon({
         }}
       ></span>
 
-      {/* Vertical line (rotates to horizontal on open) */}
+    
       <span
         className={`absolute transition-transform duration-300 ${isOpen ? "-rotate-90" : "rotate-0"
           }`}

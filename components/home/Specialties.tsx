@@ -28,13 +28,13 @@ export default function Specialties() {
               key={index}
               className="bg-[#EAE6E0] p-5 sm:p-6 md:p-5 min-h-[450px] sm:min-h-[500px] md:min-h-[550px] flex flex-col justify-between relative overflow-hidden group border border-black/20"
             >
-              {/* Text Top */}
+            
               <div>
                 <h3 className="font-heading text-xl sm:text-2xl md:text-xl font-medium mb-4 sm:mb-6 md:mb-[29px] text-[#223614]">{item.title}</h3>
                 <p className="font-body text-sm sm:text-base md:text-sm leading-relaxed text-[#223614]/90">{item.desc}</p>
               </div>
 
-              {/* Image Bottom - Responsive Circle */}
+            
               <div
                 className="w-full max-w-[280px] sm:max-w-[300px] md:max-w-[320px] aspect-square rounded-full overflow-hidden mx-auto mt-8 sm:mt-10 md:mt-12"
                 data-aos="fade-up"

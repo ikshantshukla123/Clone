@@ -3,10 +3,10 @@ import React from 'react';
 interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
-  className?: string; // Additional Tailwind classes
+  className?: string;
   disabled?: boolean;
   type?: 'button' | 'submit' | 'reset';
-  variant?: 'primary' | 'inverse'; // Primary for light bg, Inverse for dark bg
+  variant?: 'primary' | 'inverse'; 
 }
 
 export default function Button({
@@ -18,13 +18,13 @@ export default function Button({
   variant = 'primary'
 }: ButtonProps) {
 
-  // Base styles common to all buttons
+  
   const baseStyles = "inline-flex items-center justify-center border font-bold uppercase tracking-[0.2em]  transition-all duration-800 disabled:opacity-50 disabled:cursor-not-allowed";
 
-  // Variant specific styles
+  
   const variants = {
     primary: "border-[#223614] text-[#223614] hover:bg-[#223614] hover:text-white",
-    inverse: "border-white text-white hover:bg-white hover:text-[#223614]" // Default hover text to ink, can be overridden
+    inverse: "border-white text-white hover:bg-white hover:text-[#223614]" // Default 
   };
 
   return (

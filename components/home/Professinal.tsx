@@ -60,18 +60,18 @@ export default function ProfessionalBackground() {
                 className="w-full py-4 sm:py-5 md:py-3 flex items-center justify-between group text-left min-h-[44px]"
                 aria-expanded={openIndex === index}
               >
-                {/* Title (Left) */}
+              
                 <span className="font-heading text-xl sm:text-2xl md:text-3xl text-[#223614] font-normal transition-opacity pr-4">
                   {item.title}
                 </span>
 
-                {/* Plus Icon (Right) */}
+              
                 <span className="ml-4 flex-shrink-0">
                   <AccordionIcon isOpen={openIndex === index} size={32} lineWidth={16} />
                 </span>
               </button>
 
-              {/* Expandable Content */}
+             
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? "max-h-[250px] sm:max-h-[220px] md:max-h-[200px] opacity-100 pb-4 sm:pb-5 md:pb-6" : "max-h-0 opacity-0"
                   }`}

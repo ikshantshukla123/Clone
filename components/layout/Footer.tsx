@@ -5,11 +5,11 @@ export default function Footer() {
     <footer className="w-full">
 
       {/* --- TOP SECTION: MAIN INFO --- */}
-      {/* Background: Paper/White (#FBF6F1) */}
+    
       <div className="bg-paper px-4 sm:px-6 pt-12 sm:pt-14 md:pt-16 pb-16 sm:pb-24 md:pb-32 lg:pb-44 text-[#223614]">
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between gap-8 sm:gap-10 md:gap-12">
 
-          {/* LEFT SIDE: Contact Info */}
+         
           <div className="flex flex-col items-start" data-aos="fade-up" data-aos-duration="800">
             <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-7 md:mb-8">
               Lilac Template
@@ -30,10 +30,10 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* RIGHT SIDE: Hours & Find */}
+         
           <div className="flex flex-col sm:flex-row md:flex-row gap-8 sm:gap-12 md:gap-16 lg:gap-[300px]">
 
-            {/* Hours */}
+          
             <div className="flex flex-col items-start text-left" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Hours</h4>
               <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7">
@@ -42,7 +42,7 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Find */}
+           
             <div className="flex flex-col items-start md:items-end text-left md:text-right" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Find</h4>
               <nav className="flex flex-col gap-2 sm:gap-3 md:gap-2 font-heading text-base sm:text-lg md:text-xl underline decoration-1 underline-offset-4">
@@ -58,8 +58,7 @@ export default function Footer() {
       </div>
 
 
-      {/* --- BOTTOM SECTION: COPYRIGHT & LEGAL --- */}
-      {/* Background: Beige (#E5E0DA) matches 'Professional Background' section */}
+      
       <div className="bg-[#E5E0DA] px-4 sm:px-6 py-12 sm:py-14 md:py-16 text-[#223614] text-center">
         <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
 

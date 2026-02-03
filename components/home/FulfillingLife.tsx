@@ -5,7 +5,7 @@ export default function FulfillingLife() {
   return (
     <section className="w-full flex flex-col md:grid md:grid-cols-2">
 
-      {/* Image First on Mobile */}
+    
       <div className="relative h-[350px] sm:h-[450px] md:hidden" data-aos="fade-up" data-aos-duration="1000">
         <img
           src="/home/newtwo.webp"
@@ -13,9 +13,9 @@ export default function FulfillingLife() {
         />
       </div>
 
-      {/* Text Content */}
+      
       <div className="flex flex-col justify-between bg-[#e5e0da] text-[#213614] order-2 md:order-1 min-h-[600px] md:min-h-[750px]">
-        {/* Centered content wrapper */}
+       
         <div className="flex-1 flex items-center justify-center px-6 sm:px-8 md:px-12">
           <div className="w-full max-w-2xl">
             <h2 className="font-heading text-3xl sm:text-4xl md:text-6xl mb-6 md:mb-8 font-medium text-center md:text-left">
@@ -40,7 +40,7 @@ export default function FulfillingLife() {
         </div>
       </div>
 
-      {/* Image (Desktop Only) */}
+   
       <div className="hidden md:block relative h-auto min-h-[600px] order-1 md:order-2" data-aos="fade-up" data-aos-duration="1000">
         <img
           src="/home/newtwo.webp"
