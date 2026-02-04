@@ -10,7 +10,7 @@ export default function Hero() {
 
         <div className="w-full lg:col-span-5 flex justify-center lg:justify-start lg:pl-[25px] mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
 
-          <div className="relative w-[300px] h-[440px] sm:w-[360px] sm:h-[530px] lg:w-[600px] lg:h-[900px] rounded-t-[150px] sm:rounded-t-[180px] lg:rounded-t-[300px] overflow-hidden shadow-sm flex-shrink-0">
+          <div className="relative w-[240px] h-[360px] sm:w-[300px] sm:h-[450px] md:w-[360px] md:h-[530px] lg:w-[600px] lg:h-[900px] rounded-t-[120px] sm:rounded-t-[150px] md:rounded-t-[180px] lg:rounded-t-[300px] overflow-hidden shadow-sm flex-shrink-0">
             <img
               src="/home/newone.webp"
               alt="Woman holding lilacs"
@@ -27,7 +27,7 @@ export default function Hero() {
 
           <div className="flex flex-col items-center max-w-2xl">
 
-            <h1 className="font-heading font-medium text-3xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-[95px] leading-tight lg:leading-[1.05] tracking-tight lg:-tracking-[0.03em] text-center text-[#223614]" style={{ wordSpacing: '0.05em' }}>
+            <h1 className="font-heading font-medium text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[95px] leading-tight lg:leading-[1.05] tracking-tight lg:-tracking-[0.03em] text-center text-[#223614]" style={{ wordSpacing: '0.05em' }}>
               Live your life
               <br />
               in full bloom

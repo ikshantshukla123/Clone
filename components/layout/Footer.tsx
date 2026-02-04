@@ -5,36 +5,36 @@ export default function Footer() {
     <footer className="w-full">
 
       {/* --- TOP SECTION: MAIN INFO --- */}
-    
+
       <div className="bg-paper px-4 sm:px-6 pt-12 sm:pt-14 md:pt-16 pb-16 sm:pb-24 md:pb-32 lg:pb-44 text-[#223614]">
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between gap-8 sm:gap-10 md:gap-12">
 
-         
-          <div className="flex flex-col items-start" data-aos="fade-up" data-aos-duration="800">
-            <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-7 md:mb-8">
+
+          <div className="flex flex-col items-center md:items-start" data-aos="fade-up" data-aos-duration="800">
+            <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-7 md:mb-8 text-center md:text-left">
               Lilac Template
             </h3>
 
-            <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7 mb-6 sm:mb-7 md:mb-8">
+            <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7 mb-6 sm:mb-7 md:mb-8 text-center md:text-left">
               <p>123 Example Road</p>
               <p>Minneapolis, MN</p>
             </div>
 
-            <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7">
-              <p className="underline decoration-1 underline-offset-4 cursor-pointer hover:no-underline active:opacity-70 min-h-[44px] flex items-center">
+            <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7 text-center md:text-left">
+              <p className="underline decoration-1 underline-offset-4 cursor-pointer hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center md:justify-start">
                 email@example.com
               </p>
-              <p className="underline decoration-1 underline-offset-4 cursor-pointer hover:no-underline active:opacity-70 min-h-[44px] flex items-center">
+              <p className="underline decoration-1 underline-offset-4 cursor-pointer hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center md:justify-start">
                 (555) 555-5555
               </p>
             </div>
           </div>
 
-         
+
           <div className="flex flex-col sm:flex-row md:flex-row gap-8 sm:gap-12 md:gap-16 lg:gap-[300px]">
 
-          
-            <div className="flex flex-col items-start text-left" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
+
+            <div className="flex flex-col items-center sm:items-start text-center sm:text-left" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Hours</h4>
               <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7">
                 <p>Monday – Friday</p>
@@ -42,13 +42,13 @@ export default function Footer() {
               </div>
             </div>
 
-           
-            <div className="flex flex-col items-start md:items-end text-left md:text-right" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+
+            <div className="flex flex-col items-center sm:items-start md:items-end text-center sm:text-left md:text-right" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Find</h4>
               <nav className="flex flex-col gap-2 sm:gap-3 md:gap-2 font-heading text-base sm:text-lg md:text-xl underline decoration-1 underline-offset-4">
-                <Link href="/" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center">Home</Link>
-                <Link href="/contact" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center">Contact</Link>
-                <Link href="/blog" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center">Blog</Link>
+                <Link href="/" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center sm:justify-start md:justify-end">Home</Link>
+                <Link href="/contact" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center sm:justify-start md:justify-end">Contact</Link>
+                <Link href="/blog" className="hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center sm:justify-start md:justify-end">Blog</Link>
               </nav>
             </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
       </div>
 
 
-      
+
       <div className="bg-[#E5E0DA] px-4 sm:px-6 py-12 sm:py-14 md:py-16 text-[#223614] text-center">
         <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
 
