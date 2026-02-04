@@ -5,7 +5,7 @@ export default function Alone() {
     <section className="w-full grid grid-cols-1 md:grid-cols-2">
 
       {/* LEFT: Image */}
-      <div className="relative h-[400px] sm:h-[500px] md:h-auto md:min-h-[900px]" data-aos="fade-up" data-aos-duration="1000">
+      <div className="relative h-[400px] sm:h-[500px] md:h-auto md:min-h-[850px]" data-aos="fade-up" data-aos-duration="1000">
         <img
           src="/home/newsix.webp"
           alt="Woman sitting"
@@ -16,7 +16,7 @@ export default function Alone() {
 
       {/* RIGHT: Text Content */}
       <div className="bg-[#c2bfcb] flex flex-col justify-between text-[#213614]">
-        <div className="pt-14 md:pt-15 px-8 md:px-[80px] py-20 md:py-32">
+        <div className="pt-14 md:pt-15 px-8 md:px-[80px] py-20 md:py-15">
           <h2 className="font-heading text-5xl md:text-6xl mb-10 font-normal mt-30 leading-tight">
             You don’t have to do this all <span className="italic">alone</span>.
           </h2>
@@ -37,7 +37,7 @@ export default function Alone() {
         </div>
 
         <div className="w-full">
-          <Button className="w-full text-[14px] font-semibold border-0 border-t border-[#213614] h-[80px] py-8 hover:text-[#c2bfcb] rounded-none">
+          <Button className="w-full text-[14px] font-semibold !border-0 !border-t !border-[#213614] h-[80px] py-8 hover:text-[#c2bfcb] rounded-none">
             Work With Me →
           </Button>
         </div>

@@ -34,7 +34,7 @@ export default function FulfillingLife() {
         </div>
 
         <div className="w-full">
-          <Button className="w-full text-xs border-0 border-t border-[#213614] h-[50px] py-8 hover:text-[#e5e0da] rounded-none">
+          <Button className="w-full text-xs !border-0 !border-t border-[#213614] h-[50px] py-8 hover:text-[#e5e0da] rounded-none">
             Get In Touch →
           </Button>
         </div>

@@ -7,10 +7,10 @@ export default function Hero() {
 
       <div className="w-full max-w-[1600px] mx-auto flex flex-col lg:grid lg:grid-cols-12 lg:gap-12 items-center lg:items-start px-4 sm:px-6 lg:px-4">
 
-      
-        <div className="w-full lg:col-span-5 flex justify-center lg:justify-start lg:pl-[26px] mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
 
-          <div className="relative w-[300px] h-[440px] sm:w-[360px] sm:h-[530px] lg:w-[640px] lg:h-[900px] rounded-t-[150px] sm:rounded-t-[180px] lg:rounded-t-[322.5px] overflow-hidden shadow-sm flex-shrink-0">
+        <div className="w-full lg:col-span-5 flex justify-center lg:justify-start lg:pl-[25px] mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
+
+          <div className="relative w-[300px] h-[440px] sm:w-[360px] sm:h-[530px] lg:w-[600px] lg:h-[900px] rounded-t-[150px] sm:rounded-t-[180px] lg:rounded-t-[300px] overflow-hidden shadow-sm flex-shrink-0">
             <img
               src="/home/newone.webp"
               alt="Woman holding lilacs"
@@ -38,7 +38,7 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 sm:mt-8 lg:mt-[50px]">
-              <Button className="px-5 sm:px-6 md:px-[20px] py-3 md:py-[14px] text-[11px] sm:text-[12px]">
+              <Button className="px-5 sm:px-7 md:px-[20px] py-3 md:py-[12px] text-[11px] sm:text-[12px]">
                 CONNECT WITH ME →
               </Button>
             </div>
