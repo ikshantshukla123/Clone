@@ -9,7 +9,7 @@ export default function AccordionIcon({
   isOpen,
   size = 48, 
   lineWidth = 24,
-  color = "#213614"
+  color = "#175c62"
 }: AccordionIconProps) {
   return (
     <span

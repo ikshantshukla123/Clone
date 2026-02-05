@@ -2,35 +2,57 @@
 
 @theme inline {
   
-  --color-ink: #223614;
-  --color-paper: #FBF6F1;
-  --color-lavender: #c2bfcb;
+  --color-primary: #175c62;
+  --color-text: #0f172a;
+  /* slightly warmer/softer than #f8fafc, matches teal theme better */
+  --color-background: #f1f5f9;
+  --color-secondary: #0e7490;
+  --color-accent: #ecfeff;
+  --color-muted: #64748b;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
 
+  /* Legacy color mappings for backward compatibility */
+  --color-ink: #0f172a;
+  --color-paper: var(--color-background);
 
    --font-family-heading: var(--font-heading), sans-serif;
-  --font-family-body: var(--font-heading), sans-serif;
+  --font-family-body: var(--font-body), sans-serif;
 
  
-  --font-family-sans: var(--font-heading), sans-serif;
-  --font-family-serif: var(--font-heading), sans-serif; 
+  --font-family-sans: var(--font-body), sans-serif;
+  --font-family-serif: var(--font-body), sans-serif; 
 }
 
 :root {
-  --background: #FBF6F1;
-  --foreground: #223614;
+  --background: #f1f5f9;
+  --foreground: #0f172a;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-body),sans-serif;
+  font-family: var(--font-body), sans-serif;
 }
 
-
-* {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), sans-serif;
+  color: var(--color-primary);
 }
 
 button {
   font-family: inherit;
+}
+
+a {
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-accent) 70%, white);
 }

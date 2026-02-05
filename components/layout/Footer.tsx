@@ -6,27 +6,27 @@ export default function Footer() {
 
       {/* --- TOP SECTION: MAIN INFO --- */}
 
-      <div className="bg-paper px-4 sm:px-6 pt-12 sm:pt-14 md:pt-16 pb-16 sm:pb-24 md:pb-32 lg:pb-44 text-[#223614]">
+      <div className="bg-surface border-t border-border px-4 sm:px-6 pt-12 sm:pt-14 md:pt-16 pb-16 sm:pb-24 md:pb-32 lg:pb-44 text-text">
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row justify-between gap-8 sm:gap-10 md:gap-12">
 
 
           <div className="flex flex-col items-center md:items-start" data-aos="fade-up" data-aos-duration="800">
             <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-7 md:mb-8 text-center md:text-left">
-              Lilac Template
+              Dr. Maya Reynolds, PsyD
             </h3>
 
             <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7 mb-6 sm:mb-7 md:mb-8 text-center md:text-left">
-              <p>123 Example Road</p>
-              <p>Minneapolis, MN</p>
+              <p>123th Street 45 W</p>
+              <p>Santa Monica, CA 90401</p>
             </div>
 
             <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7 text-center md:text-left">
-              <p className="underline decoration-1 underline-offset-4 cursor-pointer hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center md:justify-start">
-                email@example.com
-              </p>
-              <p className="underline decoration-1 underline-offset-4 cursor-pointer hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center md:justify-start">
-                (555) 555-5555
-              </p>
+              <Link
+                href="/contact"
+                className="underline decoration-1 underline-offset-4 hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center md:justify-start"
+              >
+                Request a consultation
+              </Link>
             </div>
           </div>
 
@@ -37,8 +37,8 @@ export default function Footer() {
             <div className="flex flex-col items-center sm:items-start text-center sm:text-left" data-aos="fade-up" data-aos-delay="150" data-aos-duration="800">
               <h4 className="font-heading text-2xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 md:mb-6">Hours</h4>
               <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7">
-                <p>Monday – Friday</p>
-                <p>10am – 6pm</p>
+                <p>By appointment</p>
+                <p>In-person + telehealth</p>
               </div>
             </div>
 
@@ -59,7 +59,7 @@ export default function Footer() {
 
 
 
-      <div className="bg-[#E5E0DA] px-4 sm:px-6 py-12 sm:py-14 md:py-16 text-[#223614] text-center">
+      <div className="bg-accent px-4 sm:px-6 py-12 sm:py-14 md:py-16 text-text text-center">
         <div className="max-w-[1400px] mx-auto flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
 
           {/* Legal Links */}
@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="font-heading text-sm sm:text-base mt-4 sm:mt-6 md:mt-10" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
-            All Rights Reserved © 2024 Your Business Name Here, LLC.
+            All Rights Reserved © {new Date().getFullYear()} Dr. Maya Reynolds, PsyD
           </div>
 
         </div>

@@ -1,11 +1,13 @@
-import { Inter, Libre_Baskerville } from "next/font/google";
+import { Expletus_Sans, Space_Grotesk } from "next/font/google";
 
-export const headingFont = Inter({
+export const headingFont = Expletus_Sans({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-heading",
 });
 
-export const bodyFont = Libre_Baskerville({
+export const bodyFont = Space_Grotesk({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-body",
 });
