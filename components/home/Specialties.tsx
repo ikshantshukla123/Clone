@@ -1,18 +1,27 @@
+
+import Image from "next/image";
 const specialties = [
   {
     title: "Anxiety & panic",
     desc: "For high-functioning adults who feel “fine” on the outside but live with constant worry, tension, overthinking, and panic symptoms.",
-    img: "/home/sunlight.jpg"
+    img: "/home/sunlight.jpg",
+     width: 800,    // use lighthouse for  actual dimensions 
+    height: 800,
   },
   {
     title: "Trauma therapy (EMDR)",
     desc: "Carefully paced trauma work with an emphasis on safety, stabilization, and feeling more regulated in daily life—not just in session.",
-    img: "/home/kamal.avif"
+    img: "/home/kamal.avif",
+     width: 900,   
+    height: 900,
   },
   {
     title: "Burnout & perfectionism",
     desc: "Support for entrepreneurs, creatives, and professionals carrying relentless pressure—so you can slow down, reconnect, and sustain your life.",
-    img: "/home/beach.jpg"
+    img: "/home/beach.jpg",
+    width: 800,   
+    height: 600,
+
   }
 ];
 
@@ -41,11 +50,16 @@ export default function Specialties() {
                 data-aos-delay={index * 150}
                 data-aos-duration="800"
               >
-                <img
+                <Image
                   src={item.img}
                   alt={item.title}
+                  width={item.width}      
+                  height={item.height}    
                   className="w-full h-full object-cover object-[center_80%]"
-                  loading="lazy"
+                 
+                  priority={index === 0 ? true : false}  // First image = priority
+                  quality={75}          
+                  sizes="(max-width: 768px) 280px, 320px" //  Tell Next.js display sizes
                 />
               </div>
             </div>

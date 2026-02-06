@@ -74,13 +74,13 @@ export default function Header() {
             {/* DESKTOP NAVIGATION - RIGHT SIDE */}
             <div className="hidden md:flex items-center gap-10 mr-10 order-1 md:order-2">
               <Link
-                href="/blog"
+                href="/"
                 className="font-heading text-[22px] tracking-wide text-primary hover:text-secondary transition-colors"
               >
                 Blog
               </Link>
               <Link
-                href="/contact"
+                href="/"
                 className="font-heading text-[22px] tracking-wide text-primary hover:text-secondary transition-colors"
               >
                 Contact

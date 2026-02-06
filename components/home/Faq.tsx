@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import AccordionIcon from "../ui/AccordionIcon";
+import Image from "next/image";
 
 const faqData = [
   
@@ -36,11 +37,16 @@ export default function FAQ() {
        
         <div className="flex justify-center md:justify-end md:mr-8 lg:mr-30 order-1 md:order-1" data-aos="fade-up" data-aos-duration="1000">
           <div className="w-[300px] h-[440px] sm:w-[350px] sm:h-[600px] md:w-[500px] md:h-[720px] rounded-t-[150px] sm:rounded-t-[175px] md:rounded-t-[260px] overflow-hidden relative shadow-sm">
-            <img
+             <Image
               src="/home/chair.avif"
-              alt="Therapy office space in Santa Monica"
+              alt="Comfortable therapy chair in a calm office setting"
               className="w-full h-full object-cover"
-              loading="lazy"
+              width={800}         
+              height={1200}        
+              priority={true}      //  Likely LCP/hero image (big, above fold)
+              quality={85}        
+              sizes="(max-width: 768px) 300px, (max-width: 1024px) 350px, 500px"
+             
             />
           </div>
         </div>

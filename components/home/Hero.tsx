@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Button from "../ui/Button";
-
+import Image from "next/image";
 export default function Hero() {
   return (
     <section className="min-h-screen w-full relative overflow-hidden bg-background pt-20 md:pt-24 xl:pt-[140px]">
@@ -11,12 +11,14 @@ export default function Hero() {
         <div className="w-full xl:col-span-5 flex justify-center xl:justify-start xl:pl-[25px] mb-8 xl:mb-0" data-aos="fade-up" data-aos-duration="1000">
 
           <div className="relative w-[240px] h-[360px] sm:w-[300px] sm:h-[450px] md:w-[360px] md:h-[530px] lg:w-[600px] lg:h-[900px] rounded-t-[120px] sm:rounded-t-[150px] md:rounded-t-[180px] lg:rounded-t-[300px] overflow-hidden shadow-sm shrink-0">
-            <img
+            <Image
               src="/home/maya.png"
               alt="Dr. Maya Reynolds, Licensed Clinical Psychologist"
+                width={720}
+              height={1080}
               className="w-full h-full object-cover"
-              loading="eager"
-            />
+              priority={true}
+             />
             <div className="absolute inset-0 bg-black/5 pointer-events-none"></div>
           </div>
         </div>

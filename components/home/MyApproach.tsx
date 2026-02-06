@@ -28,7 +28,7 @@ const backgroundData = [
   }
 ];
 
-export default function ProfessionalBackground() {
+export default function MyApproach() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleItem = (index: number) => {
@@ -42,12 +42,12 @@ export default function ProfessionalBackground() {
     >
       <div className="w-full max-w-[800px] mx-auto">
 
-        {/* Centered Heading */}
+       
         <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-[3.3rem] text-center text-primary mb-8 sm:mb-10 md:mb-12 font-medium" data-aos="fade-down" data-aos-duration="800">
           My approach & focus
         </h2>
 
-        {/* Accordion List Container */}
+       
         <div className="w-full max-w-[850px] mx-auto border-t border-border bg-accent backdrop-blur-sm">
           {backgroundData.map((item, index) => (
             <div
@@ -58,7 +58,7 @@ export default function ProfessionalBackground() {
               data-aos-duration="700"
             >
 
-              {/* Toggle Button */}
+           
               <button
                 onClick={() => toggleItem(index)}
                 className="w-full py-4 sm:py-5 md:py-3 flex items-center justify-between group text-left min-h-[44px]"

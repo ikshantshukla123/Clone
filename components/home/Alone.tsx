@@ -1,36 +1,45 @@
 import Link from "next/link";
 import Button from "../ui/Button";
+import Image from "next/image";
 
 export default function Alone() {
   return (
     <section className="w-full grid grid-cols-1 xl:grid-cols-2">
-
-      {/* LEFT: Image */}
-      <div className="relative h-[400px] sm:h-[500px] xl:h-auto xl:min-h-[850px]" data-aos="fade-up" data-aos-duration="1000">
-        <img
-          src="/home/alon.jpg"
-          alt="Therapy and healing"
+     
+      <div 
+        className="relative h-[400px] sm:h-[500px] xl:h-auto xl:min-h-[850px]" 
+        data-aos="fade-up" 
+        data-aos-duration="1000"
+      >
+        <Image
+          src="/home/alon.jpg" 
+          alt="Person looking out window in a moment of reflection and calm"
           className="absolute inset-0 w-full h-full object-cover"
-          loading="lazy"
+          width={1200}        
+          height={800}        
+          priority={true}   
+          quality={85}       
+          sizes="(max-width: 1280px) 100vw, 50vw"
+          
         />
       </div>
 
-      {/* RIGHT: Text Content */}
+     
       <div className="bg-background flex flex-col justify-between text-text">
         <div className="pt-14 xl:pt-15 px-8 xl:px-[80px] py-20 xl:py-15">
           <h2 className="font-heading text-5xl xl:text-6xl mb-10 font-normal mt-30 leading-tight">
-            You don’t have to hold it all alone.
+            You don't have to hold it all alone.
           </h2>
 
           <p className="font-body text-xl font-extralight mb-8 text-text/80">
-            If any of this feels familiar, you’re not broken—and you’re not the only one:
+            If any of this feels familiar, you're not broken—and you're not the only one:
           </p>
 
           <ul className="font-body text-xl space-y-4 mb-12 list-disc list-inside marker:text-primary xl:px-[30px]">
-            <li>Constant worry, overthinking, or feeling “on edge”</li>
+            <li>Constant worry, overthinking, or feeling "on edge"</li>
             <li>Panic symptoms or a body that stays in fight-or-flight</li>
             <li>Tension, restlessness, or difficulty sleeping</li>
-            <li>Feeling “functional,” but privately overwhelmed</li>
+            <li>Feeling "functional," but privately overwhelmed</li>
             <li>Burnout, perfectionism, and pressure that never turns off</li>
           </ul>
 
@@ -47,7 +56,6 @@ export default function Alone() {
           </Link>
         </div>
       </div>
-
     </section>
   );
 }
