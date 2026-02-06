@@ -66,7 +66,7 @@ export default function Header() {
             {/* LOGO/HEADING - LEFT ON DESKTOP, RIGHT ON MOBILE */}
             <Link
               href="/"
-              className="font-heading text-2xl sm:text-3xl md:text-[38px] leading-none font-medium tracking-wide text-primary z-50 mr-1 md:mr-0 md:ml-10 order-2 md:order-1"
+              className="font-heading text-2xl sm:text-3xl md:text-[30px] leading-none font-medium tracking-wide text-primary z-50 mr-1 md:mr-0 md:ml-10 order-2 md:order-1"
             >
               Dr. Maya Reynolds, PsyD
             </Link>

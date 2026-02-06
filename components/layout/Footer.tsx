@@ -11,7 +11,7 @@ export default function Footer() {
 
 
           <div className="flex flex-col items-center md:items-start" data-aos="fade-up" data-aos-duration="800">
-            <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-6 sm:mb-7 md:mb-8 text-center md:text-left">
+            <h3 className="font-heading text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-semibold mb-6 sm:mb-7 md:mb-8 text-center md:text-left">
               Dr. Maya Reynolds, PsyD
             </h3>
 
@@ -22,7 +22,7 @@ export default function Footer() {
 
             <div className="font-heading text-base sm:text-lg md:text-xl leading-6 sm:leading-7 text-center md:text-left">
               <Link
-                href="/contact"
+                href="/"
                 className="underline decoration-1 underline-offset-4 hover:no-underline active:opacity-70 min-h-[44px] flex items-center justify-center md:justify-start"
               >
                 Request a consultation

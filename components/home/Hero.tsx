@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <section className="min-h-screen w-full relative overflow-hidden bg-background pt-20 md:pt-24 xl:pt-[140px]">
 
-      <div className="w-full max-w-[1600px] mx-auto flex flex-col xl:grid xl:grid-cols-12 xl:gap-12 items-center xl:items-start px-4 sm:px-6 xl:px-4">
+      <div className="w-full max-w-[1600px] mx-auto  flex flex-col xl:grid xl:grid-cols-12 xl:gap-12 items-center xl:items-start px-4 sm:px-6 xl:px-4">
 
 
         <div className="w-full xl:col-span-5 flex justify-center xl:justify-start xl:pl-[25px] mb-8 xl:mb-0" data-aos="fade-up" data-aos-duration="1000">
@@ -29,7 +29,7 @@ export default function Hero() {
 
           <div className="flex flex-col items-center max-w-2xl">
 
-            <h1 className="font-heading font-medium text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[95px] leading-tight xl:leading-[1.05] tracking-tight xl:-tracking-[0.03em] text-center text-primary" style={{ wordSpacing: '0.05em' }}>
+            <h1 className="font-heading font-medium text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[95px] leading-tight xl:leading-[1.05] tracking-tight xl:-tracking-[0.03em] text-center text-primary" style={{ wordSpacing: '0.05em' }}>
               Anxiety & trauma therapy
               <br />
               in Santa Monica, CA
@@ -41,7 +41,7 @@ export default function Hero() {
             </p>
 
             <div className="mt-6 sm:mt-8 xl:mt-[50px]">
-              <Link href="/contact">
+              <Link href="/">
                 <Button className="px-5 sm:px-7 md:px-[22px] py-3 md:py-[12px] text-[11px] sm:text-[12px]">
                   Free 15-minute consult →
                 </Button>
