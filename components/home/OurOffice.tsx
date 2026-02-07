@@ -29,7 +29,7 @@
         </div>
 
         {/* Images column */}
-        <div className="grid grid-cols-2 gap-4 sm:gap-5 md:gap-6" data-aos="fade-up" data-aos-delay="120" data-aos-duration="800">
+        <div className="grid grid-cols-1 gap-4 sm:gap-5 md:gap-6" data-aos="fade-up" data-aos-delay="120" data-aos-duration="800">
           <div className="col-span-2 sm:col-span-1 h-[220px] sm:h-[260px] md:h-[280px] rounded-3xl overflow-hidden shadow-sm">
             <Image
               src="/home/office1.jpeg"
