@@ -25,11 +25,11 @@ export default function Hero() {
 
 
 
-        <div className="w-full xl:col-span-7 flex flex-col items-center text-center xl:mt-[190px] px-4 sm:px-6 xl:px-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div className="w-full xl:col-span-7 flex flex-col items-center  text-center xl:mt-[190px] px-4 sm:px-6 xl:px-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
 
-          <div className="flex flex-col items-center max-w-2xl">
+          <div className="flex flex-col items-center  max-w-2xl">
 
-            <h1 className="font-heading font-medium text-3xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[95px] leading-tight xl:leading-[1.05] tracking-tight xl:-tracking-[0.03em] text-center text-primary" style={{ wordSpacing: '0.05em' }}>
+            <h1 className="font-heading font-medium text-3xl sm:text-4xl md:text-5xl lg:text-8xl xl:text-[95px] leading-tight xl:leading-[1.05] tracking-tight xl:-tracking-[0.03em] text-center text-primary" style={{ wordSpacing: '0.05em' }}>
               Anxiety & trauma therapy
               <br />
               in Santa Monica, CA
@@ -42,7 +42,7 @@ export default function Hero() {
 
             <div className="mt-6 sm:mt-8 xl:mt-[50px]">
               <Link href="/">
-                <Button className="px-5 sm:px-7 md:px-[22px] py-3 md:py-[12px] text-[11px] sm:text-[12px]">
+                <Button className="px-5 sm:px-4 md:px-[20px] py-3 md:py-[12px] text-[8px] sm:text-[10px]">
                   Free 15-minute consult →
                 </Button>
               </Link>

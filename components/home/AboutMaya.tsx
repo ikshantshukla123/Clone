@@ -36,7 +36,7 @@ export default function AboutMaya() {
           </p>
           <div className="flex justify-center xl:justify-start mb-8 xl:mb-0">
             <Link href="#approach">
-              <Button className="w-[150px] sm:w-[250px] h-[40px] sm:h-[50px] text-[8px] sm:text-[12px]">
+              <Button className="px-5 sm:px-4 md:px-[20px] py-3 md:py-[12px] text-[8px] sm:text-[10px]">
                 Explore my approach →
               </Button>
             </Link>

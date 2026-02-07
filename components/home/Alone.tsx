@@ -50,7 +50,7 @@ export default function Alone() {
 
         <div className="w-full">
           <Link href="/contact">
-            <Button className="w-full text-[14px] font-semibold border-0! border-t! border-primary! h-[80px] py-8 rounded-none">
+            <Button className="w-full text-xs font-semibold border-0! border-t! border-primary! h-[50px] py-8 rounded-none">
               Work with Dr. Reynolds →
             </Button>
           </Link>
