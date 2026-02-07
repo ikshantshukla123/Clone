@@ -24,7 +24,7 @@ export default function AboutMaya() {
         </div>
 
        
-        <div className="relative xl:absolute left-0 xl:left-[150px] top-0 xl:top-[240px] z-10 max-w-full xl:max-w-[700px] px-4 sm:px-6 md:px-0 order-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+        <div className="relative xl:absolute left-0 xl:left-[150px] top-0 xl:top-[240px] z-10 max-w-full xl:max-w-[700px] px-4 sm:px-6 md:px-2 order-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
           <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-7xl mb-6 sm:mb-7 md:mb-8 font-medium leading-tight">
             Hi, I'm Dr. Maya Reynolds, PsyD.
           </h2>
